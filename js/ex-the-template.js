@@ -4,11 +4,11 @@
     
     // WINDOW.LOAD FUNCTION start
     $(window).load(function() {
-		
+        
         // preloader
         $("#preloader").fadeOut(1400);
         $("#preloader-status").delay(300).fadeOut("slow");
-		
+        
         // elements.Timeout
         setTimeout(function() {
             $(".introduction").delay(2400).css({
@@ -39,22 +39,22 @@
         setTimeout(function() {
             $(".border-bottom").removeClass("bottom-position");
         }, 2000);
-		
+        
         // hero scale IN
         $(".hero-bg").addClass("hero-bg-show");
-	
+    
     });
     // WINDOW.LOAD FUNCTION end
-	
-	
+    
+    
     // DOCUMENT.READY FUNCTION start
     $(document).ready(function() {
-		
+        
         // kenburnsy
         $("#kenburnsy-bg").kenburnsy({
             fullscreen: true
         });
-		
+        
         // owlCarousel HERO slider
         $(".hero-slider").owlCarousel({
             autoPlay: true,
@@ -74,14 +74,14 @@
                 // slide AFTER (show captions)   
             }
         });
-		
-		// owlCarousel HERO slider ZOOM
+        
+        // owlCarousel HERO slider ZOOM
         $(".hero-slider-zoom").owlCarousel({
             autoPlay: true,
             navigation: true,
             navigationText: ["<img src='img/hero-slider-arrow-left.png'>", "<img src='img/hero-slider-arrow-right.png'>"],
             pagination: true,
-			transitionStyle: "fadeUp", // fade, backSlide, goDown, fadeUp
+            transitionStyle: "fadeUp", // fade, backSlide, goDown, fadeUp
             slideSpeed: 300,
             paginationSpeed: 400,
             singleItem: true,
@@ -95,8 +95,8 @@
                 // slide AFTER (show captions)   
             }
         });
-		
-		// owlCarousel HERO slider SPLIT
+        
+        // owlCarousel HERO slider SPLIT
         $(".hero-slider-split").owlCarousel({
             autoPlay: true,
             navigation: false,
@@ -107,7 +107,7 @@
             items: 2,
             autoHeight: true
         });
-		
+        
         // owlCarousel TEAM slider
         $("#team-carousel").owlCarousel({
             items: 3,
@@ -118,7 +118,7 @@
             itemsTablet: [740, 2],
             itemsMobile: [520, 1]
         });
-		
+        
         // owlCarousel testimonials
         $("#testimonials").owlCarousel({
             navigation: false,
@@ -129,8 +129,8 @@
             singleItem: true,
             autoPlay: 7000
         });
-		
-		// owlCarousel TIME slides
+        
+        // owlCarousel TIME slides
         $(".time-slides").owlCarousel({
             navigation: false,
             pagination: false,
@@ -140,8 +140,8 @@
             singleItem: true,
             autoPlay: 5000
         });
-		
-		// owlCarousel NEWS slider
+        
+        // owlCarousel NEWS slider
         $("#news-carousel").owlCarousel({
             navigation: false,
             pagination: true,
@@ -150,10 +150,10 @@
             paginationSpeed: 500,
             singleItem: true,
             // autoPlay: 7000
-			autoPlay: false
+            autoPlay: false
         });
-		
-		// owlCarousel NEWS IMG slider 1
+        
+        // owlCarousel NEWS IMG slider 1
         $("#news-img-carousel-1").owlCarousel({
             navigation: false,
             pagination: true,
@@ -162,10 +162,10 @@
             paginationSpeed: 500,
             singleItem: true,
             // autoPlay: 7000
-			autoPlay: false
+            autoPlay: false
         });
-		
-		// owlCarousel NEWS IMG slider 2
+        
+        // owlCarousel NEWS IMG slider 2
         $("#news-img-carousel-2").owlCarousel({
             navigation: false,
             pagination: true,
@@ -174,40 +174,40 @@
             paginationSpeed: 500,
             singleItem: true,
             // autoPlay: 7000
-			autoPlay: false
+            autoPlay: false
         });
-		
+        
         // signup form
         $(".ex-modal-launcher").on("click", function(e) {
             e.preventDefault();
             $(this).toggleClass("open");
             $(".ex-modal").toggleClass("show");
         });
-		
+        
         // search form
         $(".search-modal-launcher").on("click", function(e) {
             e.preventDefault();
             $(this).toggleClass("open");
             $(".search-modal").toggleClass("show");
         });
-		
+        
         // menu button
         $('.menu').click(function() {
             $(this).toggleClass('open');
         });
-		
+        
         // social icons share
         $(".social-toggle-wrap").hover(function() {
             $(this).find(".social-widgets-wrap").stop().fadeIn("slow");
         }, function() {
             $(this).find(".social-widgets-wrap").stop().delay(50).fadeOut("slow");
         });
-		
+        
         // YTPlayer
         $(function() {
             $(".player").mb_YTPlayer();
         });
-		
+        
         // contact form
         $("form#form").submit(function() {
             $("form#form .error").remove();
@@ -233,7 +233,7 @@
             }
             return !1;
         });
-		
+        
         // newsletter form
         $("form#subscribe").submit(function() {
             $("form#subscribe .subscribe-error").remove();
@@ -259,9 +259,9 @@
             }
             return !1;
         });
-		
-		// magnificPopup VIDEO
-		$('.popup-video').magnificPopup({
+        
+        // magnificPopup VIDEO
+        $('.popup-video').magnificPopup({
           disableOn: 700,
           type: 'iframe',
           mainClass: 'mfp-fade',
@@ -270,33 +270,33 @@
 
           fixedContentPos: false
         });
-		
-		// Vimeofy
-		$('#videoContainment-vimeo').vimeofy({
+        
+        // Vimeofy
+        $('#videoContainment-vimeo').vimeofy({
             'url': 'https://vimeo.com/105001064', // Vimeo VIDEO URL
             'color': '#00D8D8',
             'autoplay': true,
             'loop': true,
             'delay': 5000
         });
-	
+    
     });
     // DOCUMENT.READY FUNCTION end
-	
-	
+    
+    
     // on.scroll FADE FUNCTION start
     $(window).scroll(function() {
-		
+        
         var scrollTop = $(window).scrollTop();
         var height = $(window).height();
         $('.alternative-borders, .line-left, .line-right').css({
             'opacity': ((height - scrollTop) / height)
         });
-	
+    
     });
     // on.scroll FADE FUNCTION end
-	
-	
+    
+    
     // MOBILE DETECT start
     var isMobile = {
         Android: function() {

@@ -1,7 +1,7 @@
 (function($) {
     "use strict";
-	
-	
+    
+    
     // DOCUMENT.READY FUNCTION start
     $(document).ready(function() {
         // item photos
@@ -74,8 +74,8 @@
         navMobile();
     });
     // DOCUMENT.READY FUNCTION end
-	
-	
+    
+    
     // WINDOW.SCROLL FUNCTION start
     // scroll
     $(window).scroll(function() {
@@ -182,23 +182,23 @@
         }
     });
     // WINDOW.SCROLL FUNCTION end
-	
-	
+    
+    
     // WINDOW.RESIZE FUNCTION start
     $(window).resize(function() {
         navMobile();
         navWorksWidth($(window).scrollTop());
     });
     // WINDOW.RESIZE FUNCTION end
-	
-	
+    
+    
     // WINDOW.LOAD FUNCTION start
     $(window).load(function() {
         navWorksWidth($(window).scrollTop());
     });
     // WINDOW.LOAD FUNCTION end
-	
-	
+    
+    
     //
     function navWorksWidth(scrollTop) {
         if ($(window).width() > 900) {
@@ -238,6 +238,6 @@
             $("body").removeClass("secondary-experience mobile");
         }
     }
-	
-	
+    
+    
 })(jQuery);
