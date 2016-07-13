@@ -366,7 +366,7 @@ background: #222!important;
 position: absolute;
 top: 43px;
 left: -99999em;
-width: 195px;
+width: 225px;
 background: #111;
 text-align: left;
 white-space: nowrap;
@@ -606,7 +606,7 @@ background: #fff;
 .bt-nav-logo {
 position: relative;
 margin: 20px auto 0 auto;
-width: 80px;
+width: 270px;
 height: 70px;
 text-indent: inherit;
 cursor: pointer;
@@ -2164,6 +2164,14 @@ filter: alpha(opacity=100);
   }
 }
 
+.1{
+  position: absolute; 
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+  color:white;
+}
 
 /* works hover */
 .icon-works {
@@ -2319,7 +2327,7 @@ padding: 27px 5px 0 0;
     -ms-transition: all .25s ease;
    -o-transition: all .25s ease;
         transition: all .25s ease;
-background-color: #111;
+background-color:;
 z-index: 999;
 }
 
@@ -2796,7 +2804,7 @@ min-height: inherit;
 overflow: hidden;
 margin-left: 50px;
 margin-right: 0;
-margin-bottom: 50px;
+margin-bottom: -100px;
 background: none;
 }
 
@@ -2817,8 +2825,8 @@ margin: 0 auto;
 }
 
 .footer-credits-logo img {
-width: 80px;
-height: 70px;
+width: 205px;
+height: 310px;
 }
 
 .footer-credits-copyright {
@@ -5855,6 +5863,22 @@ font-size: 12px;
 padding-bottom: 15px;
 }
 
+}
+
+.studio{
+  background-color:#5f5f5f;
+  color:white;
+  text-align: right;
+  height:100px;
+  margin-top:15px;
+  font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    c
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    padding-top:17px;
+    padding-right:25px;
 }
 
 

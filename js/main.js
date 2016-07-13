@@ -124,6 +124,7 @@
             }
         }
         navWorksWidth(scrollTop);
+        
         // navigation
         if (scrollTop >= $("#page-home").offset().top && scrollTop < $("#page-about").offset().top) {
             $('nav .navscroll').removeClass('active');
@@ -140,39 +141,24 @@
         } else if (scrollTop2 >= $("#item-2").offset().top && scrollTop2 < $("#item-3").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='item-2']").addClass('active');
-        } else if (scrollTop2 >= $("#item-3").offset().top && scrollTop2 < $("#item-4").offset().top) {
+        } else if (scrollTop2 >= $("#item-3").offset().top && scrollTop2 < $("#item-page-2").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='item-3']").addClass('active');
-        } else if (scrollTop2 >= $("#item-4").offset().top && scrollTop2 < $("#item-5").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='item-4']").addClass('active');
-        } else if (scrollTop2 >= $("#item-5").offset().top && scrollTop2 < $("#item-page-2").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='item-5']").addClass('active');
+        
         } else if (scrollTop >= $("#item-page-2").offset().top && scrollTop < $("#item-1-1").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='item-page-2']").addClass('active');
         } else if (scrollTop2 >= $("#item-1-1").offset().top && scrollTop2 < $("#item-2-1").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='item-1-1']").addClass('active');
-        } else if (scrollTop2 >= $("#item-2-1").offset().top && scrollTop2 < $("#item-3-1").offset().top) {
+        } else if (scrollTop2 >= $("#item-2-1").offset().top && scrollTop2 < $("#page-services").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='item-2-1']").addClass('active');
-        } else if (scrollTop2 >= $("#item-3-1").offset().top && scrollTop2 < $("#item-4-1").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='item-3-1']").addClass('active');
-        } else if (scrollTop2 >= $("#item-4-1").offset().top && scrollTop2 < $("#item-5-1").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='item-4-1']").addClass('active');
-        } else if (scrollTop2 >= $("#item-5-1").offset().top && scrollTop2 < $("#page-services").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='item-5-1']").addClass('active');
-        } else if (scrollTop >= $("#page-services").offset().top && scrollTop < $("#page-news").offset().top) {
+        
+        } else if (scrollTop >= $("#page-services").offset().top && scrollTop < $("#page-testimonials").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='page-services']").addClass('active');
-        } else if (scrollTop >= $("#page-news").offset().top && scrollTop < $("#page-testimonials").offset().top) {
-            $('nav .navscroll').removeClass('active');
-            $("nav").find("[data-idpage='page-news']").addClass('active');
+       
         } else if (scrollTop >= $("#page-testimonials").offset().top && scrollTop < $("#page-contact").offset().top) {
             $('nav .navscroll').removeClass('active');
             $("nav").find("[data-idpage='page-testimonials']").addClass('active');
