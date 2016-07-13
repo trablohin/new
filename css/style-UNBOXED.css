@@ -2804,7 +2804,7 @@ min-height: inherit;
 overflow: hidden;
 margin-left: 50px;
 margin-right: 0;
-margin-bottom: 0px;
+margin-bottom: -100px;
 background: none;
 }
 
@@ -5878,7 +5878,15 @@ padding-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.25em;
     padding-top:17px;
-    padding-right:25px;
+    padding-right:20x;
+}
+@media screen and (max-width:480px){
+  
+  .lol, .lola{
+    padding-right: 5px;
+    font-size:13px;
+  }
+
 }
 
 
